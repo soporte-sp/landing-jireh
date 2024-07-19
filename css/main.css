@@ -1348,7 +1348,7 @@ blockquote.normal {
 	background-attachment: initial;
 	background-size: cover;
 	background-position: 50% 0;
-	z-index: -1;
+	z-index: 1;
 	position: relative;
 }
 
@@ -2402,7 +2402,7 @@ blockquote.normal {
 
 a.thumbnail {
 	padding: 0;
-	background: transparent;
+	background: grey;
 	width: 170px;
 	height: 165px;
 	border: none;
@@ -2411,6 +2411,7 @@ a.thumbnail {
 }
 
 a.thumbnail img {
+	padding-block-start: 2rem;
 	width: 50%;
 	max-width: none;
 }
@@ -2569,7 +2570,7 @@ a.thumbnail img {
 }
 
 .gallery-list a:hover:after {
-	opacity: 1;
+	opacity: 0.7;
 }
 
 .gallery-list a:hover .hover {
@@ -2600,7 +2601,6 @@ a.thumbnail img {
 	font-size: 14px;
 	line-height: 1.5;
 	font-weight: 700;
-	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
@@ -7733,7 +7733,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
 /* footer social network styles */
 
 .social-wrap {
-	display: table;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
 	width: 100%;
 	text-align: center;
 }
@@ -9358,7 +9360,6 @@ h4,
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
-
 #tour-slide {
 	height: 320px;
 }
@@ -9422,6 +9423,7 @@ h4,
 }
 
 @media screen and (min-width: 768px) {
+
 
 .demo-wrapper .data-table {
 	display: table;
@@ -12039,6 +12041,16 @@ h4,
 
 @media only screen and (max-width: 991px) {
 
+	.main-subtitle {
+		display: block;
+		text-align: center;
+		width: 100%;
+		font-size: 2.7rem;
+		line-height: 1.25;
+		font-weight: 600;
+		letter-spacing: .04em;
+		color: black;
+	}
 #header .container-fluid {
 	padding: 0;
 }
@@ -12638,7 +12650,7 @@ to {
 .form-footer{
 	display: flex; 
 	flex-direction: column; 
-	width: 70%; 
+	width: 90%; 
 	gap: .5rem;
 }
 .form-footer input {
@@ -12668,7 +12680,7 @@ to {
 .social-title{
 	text-align: center;
 	color: white;
-	font-size: 2.6rem;
+	font-size: 2.4rem;
 	font-weight: lighter;
 	margin-block-end: 3.2rem;
 }
@@ -12679,10 +12691,10 @@ to {
 }
 
 .footer-bottom p:nth-child(1){
-	width: 40%; 
+	width: 50%; 
 	margin-block-end: 2rem;
 }
 
 .footer-bottom p:nth-child(2){
-	width: 57%; 
+	width: 67%; 
 }
