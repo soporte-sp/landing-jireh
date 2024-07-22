@@ -2403,7 +2403,6 @@ blockquote.normal {
 a.thumbnail {
 	padding: 0;
 	background: grey;
-	width: 170px;
 	height: 165px;
 	border: none;
 	border-radius: 0;
@@ -2538,7 +2537,7 @@ a.thumbnail img {
 	overflow: hidden;
 	margin: 0;
 	display: block;
-	position: relative;
+	
 	overflow: hidden;
 	z-index: 2;
 }
@@ -2563,7 +2562,7 @@ a.thumbnail img {
 	right: -1px;
 	top: 0;
 	bottom: 0;
-	background: rgba(71, 77, 75, .92);
+	
 	opacity: 0;
 	-webkit-transition: opacity .2s linear;
 	transition: opacity .2s linear;
